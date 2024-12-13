@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Student Enrollment Data</title> <!-- Sets the title of the web page -->
+</head>
+<style>
+    table {
+        width: 100%; /* Makes the table take the full width of the container */
+        border-collapse: collapse; /* Ensures borders are combined for a clean look */
+        margin: 20px 0; /* Adds margin above and below the table */
+        font-size: 16px; /* Sets the font size for the table text */
+        font-family: Arial, sans-serif; /* Sets the font family for the table text */
+    }
+
+    /* Table header styling */
+    th {
+        background-color: white; /* Sets the background color for header cells */
+        color: #343a40; /* Sets the text color for header cells */
+        padding: 12px 15px; /* Adds padding around header cell content */
+        text-align: left; /* Aligns text to the left in header cells */
+        border-bottom: 2px solid #c2c0bf; /* Adds a bottom border to header cells */
+    }
+
+    /* Table cell styling */
+    td {
+        padding: 12px 15px; /* Adds padding around table cell content */
+        border-bottom: 1px solid #dfdddc; /* Adds a bottom border to table cells */
+    }
+
+    /* Hover effect for table rows */
+    tr:hover {
+        background-color: #f1f1f1; /* Changes background color on hover for rows */
+    }
+
+    /* Alternating row colors */
+    tr:nth-child(odd) {
+        background-color: #f2f2f2; /* Sets light gray background for odd rows */
+    }
+
+    tr:nth-child(even) {
+        background-color: white; /* Sets white background for even rows */
+    }
+</style>
+<body>
+  
+    <table id="data-table"> <!-- Starts the table with an ID for referencing -->
+        <thead> <!-- Defines the header section of the table -->
+            <tr> <!-- Starts a table row for header cells -->
+                <th>Year</th> <!-- Column header for Year -->
+                <th>Semester</th> <!-- Column header for Semester -->
+                <th>The Programs</th> <!-- Column header for Programs -->
+                <th>Nationality</th> <!-- Column header for Nationality -->
+                <th>Colleges</th> <!-- Column header for Colleges -->
+                <th>Number of Students:</th> <!-- Column header for Number of Students -->
+            </tr>
+        </thead>
+        <tbody id="data-body"> <!-- Defines the body section of the table where data will be inserted -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
